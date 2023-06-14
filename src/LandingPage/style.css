@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 0 20px;
 }
 
 .logo {
@@ -50,7 +51,7 @@
 }
 
 .texto h1 {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .texto strong {
@@ -58,14 +59,37 @@
 }
 
 .texto p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .texto-kelly{
     font-family: 'Great Vibes', cursive;
     font-size: 50px;
     color: #b2987d;
+    margin-top: 50px;
 }
 
+/*responsivo*/
 
+@media screen and (max-width:375px) {
+    .texto {
+        padding: 50px 20px;
+    }
+}
+
+/*-----------------*/
+
+@media screen and (max-width: 768px) {
+    .texto {
+        padding: 50px 30px;
+    }
+}
+
+/*-----------------*/
+
+@media screen and (max-width: 1024px) {
+    .texto {
+        padding: 50px 30px;
+    }
+}
 
