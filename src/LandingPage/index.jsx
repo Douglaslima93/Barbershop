@@ -2,11 +2,22 @@ import React, {useState} from "react";
 import './style.css'
 
 function LandingPage () {
+    
+    const LightMode = 'modo-claro'
+    const DarkMode = 'modo-escuro'
+
+    const [ TrocarCorFundo , setTrocarCorFundo ] = useState(true)
+
+    const novaCor = () => (
+        setTrocarCorFundo(!TrocarCorFundo)
+    )
+
     return (
-        <div>
+        <div className={TrocarCorFundo ? LightMode : DarkMode}>
+
             <header className="topo">
                 <img className="logo" src="./img/barbearia-logo.png" alt="barbearia-logo"/>
-                <button><img src="./img/moon.png" alt="moon"/>Dark</button>
+                <button onClick={novaCor} className={TrocarCorFundo ? LightMode : DarkMode }><img src="./img/sun.png" alt="moon"/>Light</button>
             </header>
 
             <section className="banner"></section>
