@@ -3,6 +3,9 @@ import './style.css'
 
 function LandingPage () {
     
+function trocaTexto () {
+}
+
     const LightMode = 'modo-claro'
     const DarkMode = 'modo-escuro'
 
