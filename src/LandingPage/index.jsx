@@ -5,6 +5,8 @@ function LandingPage () {
     
     const LightMode = 'modo-claro'
     const DarkMode = 'modo-escuro'
+    const Sun = '.img-sun'
+    const Moon = '.img-moon'
 
     const [ TrocarCorFundo , setTrocarCorFundo ] = useState(true)
 
@@ -17,7 +19,7 @@ function LandingPage () {
 
             <header className="topo">
                 <img className="logo" src="./img/barbearia-logo.png" alt="barbearia-logo"/>
-                <button onClick={novaCor} className={TrocarCorFundo ? LightMode : DarkMode }><img src="./img/sun.png" alt="moon"/>Light</button>
+                <button onClick={novaCor} className={TrocarCorFundo ? LightMode : DarkMode }><div className="img-sun"></div>Light</button>
             </header>
 
             <section className="banner"></section>

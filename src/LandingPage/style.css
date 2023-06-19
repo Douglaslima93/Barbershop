@@ -8,6 +8,20 @@
     color: #fff;
 }
 
+.img-sun{
+    background-image: url('../../img/sun.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+.img-moon{
+    background-image: url('../../img/moon.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
 .topo {
     display: flex;
     flex-direction: row;
@@ -33,10 +47,11 @@
     font-weight: bold;
 }
 
+/*
 .topo button img {
     width: auto;
     height: 30px;
-}
+}*/
 
 .banner {
     width: 100%;
