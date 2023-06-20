@@ -7,19 +7,33 @@ function LandingPage () {
     const DarkMode = 'modo-escuro'
     const Sun = '.img-sun'
     const Moon = '.img-moon'
+    const Light = 'Moon'
+    const Black = 'Light'
 
     const [ TrocarCorFundo , setTrocarCorFundo ] = useState(true)
-
+    //const [ TrocarImagem , setTrocarImagem ] = useState(true)
+    //const [ TrocarTexto , setTrocarTexto ] = useState(true)
+    
+    
     const novaCor = () => (
         setTrocarCorFundo(!TrocarCorFundo)
+        //setTrocarImagem(!TrocarImagem),
+        //setTrocarTexto(!TrocarTexto)
     )
+
+    if (TrocarCorFundo == LightMode) {
+        LightMode == Moon
+    } else {
+        LightMode == Sun
+    }
 
     return (
         <div className={TrocarCorFundo ? LightMode : DarkMode}>
 
             <header className="topo">
                 <img className="logo" src="./img/barbearia-logo.png" alt="barbearia-logo"/>
-                <button onClick={novaCor} className={TrocarCorFundo ? LightMode : DarkMode }><div className="img-sun"></div>Light</button>
+                <button onClick={novaCor} className={TrocarCorFundo ? LightMode : DarkMode }>
+                    <img className="img-moon"/>Moon</button>
             </header>
 
             <section className="banner"></section>
