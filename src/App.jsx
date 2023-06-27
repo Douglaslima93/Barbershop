@@ -6,7 +6,7 @@ import LandingPage from './LandingPage'
 function App() {
 
   return (
-    <div className='limitar-secao'> 
+    <div > 
         <LandingPage/>
     </div>
   )

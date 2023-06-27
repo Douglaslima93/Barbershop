@@ -3,37 +3,20 @@ import './style.css'
 
 function LandingPage () {
     
-    const LightMode = 'modo-claro'
-    const DarkMode = 'modo-escuro'
-    const Sun = '.img-sun'
-    const Moon = '.img-moon'
-    const Light = 'Moon'
-    const Black = 'Light'
+    const [ TrocarCorFundo , setTrocarCorFundo ] = useState(false)
 
-    const [ TrocarCorFundo , setTrocarCorFundo ] = useState(true)
-    //const [ TrocarImagem , setTrocarImagem ] = useState(true)
-    //const [ TrocarTexto , setTrocarTexto ] = useState(true)
-    
-    
-    const novaCor = () => (
+    const alterarTema = () => (
         setTrocarCorFundo(!TrocarCorFundo)
-        //setTrocarImagem(!TrocarImagem),
-        //setTrocarTexto(!TrocarTexto)
     )
 
-    if (TrocarCorFundo == LightMode) {
-        LightMode == Moon
-    } else {
-        LightMode == Sun
-    }
-
     return (
-        <div className={TrocarCorFundo ? LightMode : DarkMode}>
+        <div className={TrocarCorFundo ? 'modo-escuro' : 'modo-claro'}>
 
             <header className="topo">
                 <img className="logo" src="./img/barbearia-logo.png" alt="barbearia-logo"/>
-                <button onClick={novaCor} className={TrocarCorFundo ? LightMode : DarkMode }>
-                    <img className="img-moon"/>Moon</button>
+                <button onClick={alterarTema} className={TrocarCorFundo ? 'modo-escuro' : "modo-claro"}>
+                    <img className="btn-icone" src={TrocarCorFundo ? './img/sun.png' : './img/moon.png'} alt="icone"/>
+                    {TrocarCorFundo ? `Light` : `Dark`}</button>
             </header>
 
             <section className="banner"></section>
