@@ -9,9 +9,9 @@
 ### - Utilizar o operador IF ternário e criar condicionais para manusear classes CSS, imagens e textos no código React.
 
 ## Oque aprendi:
-### Utilizar operador condicional (ternário).
-### Utilizar State Hook, para manipular o tema entre modo Dark ou Light.
-### Utilizar evento onClik para fazer a funcionalidade de alterar o tema da página.
+### - Utilizar operador condicional (ternário).
+### - Utilizar State Hook, para manipular o tema entre modo Dark ou Light.
+### - Utilizar evento onClik para fazer a funcionalidade de alterar o tema da página.
 
 ### ![Alt text](Tema-light.png)
 ### ![Alt text](Tema-dark.png)
